@@ -13,6 +13,7 @@ export class ShoppingCartService{
         let foundItem = this.items.find((mItem)=> mItem.menuItem.id  === item.id)
         if(foundItem){
             foundItem.quantity = foundItem.quantity + 1
+            console.log(item)
         }else{
             this.items.push(new CartItem(item))
         }
