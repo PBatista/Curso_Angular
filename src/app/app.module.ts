@@ -18,7 +18,8 @@ import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shoppin
 import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart-service';
-
+import { OrderComponent } from './order/order.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -32,9 +33,11 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
     MenuComponent,
     ShoppingCartComponent,
     MenuItemComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
